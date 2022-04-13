@@ -8,6 +8,11 @@ import './style.css';
 //alert("Hello again");
 //alert(broj); // Variable
 
+/***** PROMPT *****/
+//prompt("Unesite vaše ime");
+var ime = prompt("Unesite vaše ime");
+console.log(ime);
+
 /***** DATA TYPES *****/
 typeof 'Jovan'; // vraća "string"
 typeof 3.14; // vraća "number"
