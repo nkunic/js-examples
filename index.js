@@ -10,26 +10,26 @@ import './style.css';
 
 /***** PROMPT *****/
 //prompt("Unesite vaše ime");
-var ime = prompt("Unesite vaše ime");
-console.log(ime);
-
-/***** DATA TYPES *****/
-typeof 'Jovan'; // vraća "string"
-typeof 3.14; // vraća "number"
-typeof NaN; // vraća "number"
-typeof false; // vraća "boolean"
-typeof [1, 2, 3, 4]; // vraća "object" ???
-typeof { name: 'Jovan', age: 34 }; // vraća "object"
-typeof new Date(); // vraća "object"
-typeof function () {}; // vraća "function"
-typeof myCar; // vraća "undefined"
-typeof null; // vraća "object"
+//var ime = prompt("Unesite vaše ime");
+//console.log(ime);
 
 /***** VARIABLES *****/
 //var broj = 12; // number
 //console.log(broj);
 //var text = 'Učim Javascript'; // string
 //console.log(text);
+
+/***** DATA TYPES *****/
+// typeof 'Jovan'; // vraća "string"
+// typeof 3.14; // vraća "number"
+// typeof NaN; // vraća "number"
+// typeof false; // vraća "boolean"
+// typeof [1, 2, 3, 4]; // vraća "object" ???
+// typeof { name: 'Jovan', age: 34 }; // vraća "object"
+// typeof new Date(); // vraća "object"
+// typeof function () {}; // vraća "function"
+// typeof myCar; // vraća "undefined"
+// typeof null; // vraća "object"
 
 /***** STRING *****/
 //var name = 'Nataša';
@@ -49,6 +49,43 @@ typeof null; // vraća "object"
 //var sum = num1 + num2;
 //var sum = str1 + num1;
 //console.log(sum);
+
+/***** BOOLEAN *****/
+// var laz = false;
+// var istina = true;
+// console.log(1 == 1);
+// console.log('Danilo' == 'Danilo');
+// console.log('danilo' == 'Danilo');
+// console.log(true == true);
+// console.log(true == 1);
+// console.log(false == 0);
+// console.log(true === 1);
+// var array1 = [1,2,3];
+// var array2 = [1,2,3];
+// console.log(array1 === array2);
+
+/***** IF STATEMENT *****/
+// if (true) {
+//   console.log('Pogodak!');
+// } else {
+//   console.log('Greška!');
+// }
+// var password = 123;
+// if (password === 123) {
+//   console.log('Pogodak!');
+// } else {
+//   console.log('Greška!');
+// }
+var password = prompt("Pogodite broj");
+if (password === 123) {
+  console.log('Pogodak!');
+} else {
+  console.log('Greška!');
+}
+
+
+
+
 
 /***** UNDEFINED & NULL *****/
 //var car;
@@ -92,6 +129,28 @@ typeof null; // vraća "object"
 //	}
 //}
 //console.log(knjiga.pisac.ime);
+
+/***** DATA TYPES CONVERSION *****/
+//var num1 = prompt("Unesite prvi broj");
+//var num2 = prompt("Unesite drugi broj");
+//console.log(num1 + num2);
+
+//var num1 = prompt("Unesite prvi broj");
+//var num2 = prompt("Unesite drugi broj");
+//var num3 = parseInt(num1);
+//var num4 = parseInt(num2);
+//console.log(num3 + num4);
+
+//var num1 = parseInt(prompt('Unesite prvi broj'));
+//var num2 = parseInt(prompt('Unesite drugi broj'));
+//console.log(num1 + num2);
+
+//console.log("10" - 5);
+//console.log("Danilo" / 5); // NaN not an number
+
+// var names = ['Ana', 'Marija', 'Jovana'];
+// console.log(names);
+// console.log(names.toString());
 
 /***** FUNCTION *****/
 //function display() {
