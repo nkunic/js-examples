@@ -197,6 +197,11 @@ import './style.css';
 //var pozdravImenom = pozdrav('Juliska');
 //console.log(pozdravImenom);
 
+// function x(a,b){
+//   console.log(a+b)
+// }
+// x("3",1212);
+
 /***** PRACTICE *****/
 // var num1 = parseInt(prompt('Unesite broj 1'));
 // var num2 = parseInt(prompt('Unesite broj 2'));
