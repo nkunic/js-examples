@@ -19,11 +19,21 @@ var questions = [
 ];
 
 var questionIndex = 0;
+var userScore = 0;
 
 function askQuestion() {
   var userAnswer = confirm(questions[questionIndex].text);
+  if(questions[questionIndex].correctAnswer === userAnswer) {
+    userScore++;
+  }
   questionIndex++;
+  if(questionIndex !== questions.length) {
+    askQuestion();
+  }
 }
-askQuestion();
-askQuestion();
-askQuestion();
+// askQuestion();
+// askQuestion();
+// askQuestion();
+
+//console.log("Odgovorili ste tačno na: " + userScore + " od " +  questions.length + " pitanja");
+alert("Odgovorili ste tačno na: " + userScore + " od " +  questions.length + " pitanja");
