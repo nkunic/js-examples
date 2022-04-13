@@ -11,38 +11,11 @@ import './style.css';
 
 
 
-/***** STRING *****/
-//var name = 'Nataša';
-//var job = 'developer';
-//var nj = name + job;
-//console.log(nj);
 
-//var text2 = "Danas je \"divan\" dan";
-//var text3 = 'Danas je \n novi \t dan';
-//console.log(text2);
-//console.log(text3);
 
-/***** NUMBER *****/
-//var num1 = 6;
-//var num2 = 12.3;
-//var str1 = "Nataša";
-//var sum = num1 + num2;
-//var sum = str1 + num1;
-//console.log(sum);
 
-/***** BOOLEAN *****/
-// var laz = false;
-// var istina = true;
-// console.log(1 == 1);
-// console.log('Danilo' == 'Danilo');
-// console.log('danilo' == 'Danilo');
-// console.log(true == true);
-// console.log(true == 1);
-// console.log(false == 0);
-// console.log(true === 1);
-// var array1 = [1,2,3];
-// var array2 = [1,2,3];
-// console.log(array1 === array2);
+
+
 
 /***** IF STATEMENT *****/
 // if (true) {
