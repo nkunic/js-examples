@@ -22,7 +22,7 @@ var questionIndex = 0;
 var userScore = 0;
 
 function askQuestion() {
-  var userAnswer = confirm(questions[questionIndex].text);
+  var userAnswer = confirm(questions[questionIndex].text + "\nCancel = Ne     OK = Da ");
   if(questions[questionIndex].correctAnswer === userAnswer) {
     userScore++;
   }
@@ -31,7 +31,7 @@ function askQuestion() {
     askQuestion();
   }
 }
-// askQuestion();
+askQuestion();
 // askQuestion();
 // askQuestion();
 
