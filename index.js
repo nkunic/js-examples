@@ -36,13 +36,7 @@ import './style.css';
 //   console.log('Greška!');
 // }
 
-/***** UNDEFINED & NULL *****/
-//var car;
-//var car = null;
-//console.log(car);
-//var car = 'Volvo';
-//console.log(car);/
-//console.log(undefined === null); // false
+
 
 /*****  ARRAY *****/
 //var cars = ['Škoda', 'Volvo', 'Audi'];
