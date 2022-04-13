@@ -1,9 +1,9 @@
 /***** PROMPT *****/
-//prompt("Unesite vaše ime");
-//var ime = prompt("Unesite vaše ime");
-//console.log(ime);
+prompt("Unesite vaše ime");
+var ime = prompt("Unesite vaše ime");
+console.log(ime);
 
-var person = prompt('Unesite svoje ime', 'Petar Petrovic');
+var person = prompt('Unesite svoje ime', 'Petar Petrovic'); // presetovana vrednost
 if (person == null || person == '') {
   txt = 'Korisnik je otkazao prompt.';
 } else {
