@@ -38,40 +38,9 @@ import './style.css';
 
 
 
-/*****  ARRAY *****/
-//var cars = ['Škoda', 'Volvo', 'Audi'];
-//console.log(cars);
-//var car = cars[0];
-//console.log(car);
-//console.log(cars[1]);
 
-//var cars = ['Škoda', 'Volvo', 'Audi', 2, null, undefined, [1, 2, 3]];
-//console.log(cars[4]);
-//console.log(cars[5]);
-//console.log(cars[6]);
-//console.log(cars[6][1]);
 
-/*****  OBJECT *****/
-//var grad = {
-//  ime: 'Beograd',
-//  brojStanovnika: 2000000,
-//  reke: ['Dunav', 'Sava'],
-//};
-//console.log(grad.ime);
-//console.log(grad.ime + "ima" + grad.brojStanovnika + "stanovnika");
-//console.log(grad.reke[0]);
-//grad.staroIme = 'Singidunum';
-//console.log(grad);
-//console.log(grad["ime"]);
 
-//var knjiga = {
-//	ime : "JavaScript",
-//	pisac : {
-//		ime : "Danilo",
-//		prezime : "Vesović"
-//	}
-//}
-//console.log(knjiga.pisac.ime);
 
 /***** DATA TYPES CONVERSION *****/
 //var num1 = prompt("Unesite prvi broj");
