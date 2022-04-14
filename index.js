@@ -2,7 +2,14 @@
 import './style.css';
 
 // Write Javascript code!
-var names = ['Ana', 'Marija', 'Ivana', 'Jovana', 'Sofija'];
-for (var i = 0; i < names.length; i++) {
-  console.log(names[i]);
+
+var names = [];
+
+function askUser() {
+  var name = prompt("Unesite ime");
+  names[0] = name;
 }
+
+askUser();
+
+console.log(names);
