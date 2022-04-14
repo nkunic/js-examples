@@ -73,13 +73,77 @@ var info2 = function () {
 };
 info2();
 
-
 /* Metode */
 var car = {
-  name: "Volvo",
+  name: 'Volvo',
   speed: 260,
-  info: function(){
-    console.log(car.name + " " + car.speed);
-  }
-}
+  info: function () {
+    console.log(car.name + ' ' + car.speed);
+  },
+};
 car.info(); // Volvo 260
+
+/* Argumenti */
+function info(a, b) {
+  console.log(a, b);
+}
+info(10, 20); // 10, 20
+
+function info(a, b) {
+  console.log(a, b);
+}
+info(10, 20, 30); // 10, 20 (30 će ignorisati)
+
+function info() {
+  console.log(arguments);
+}
+info(10, 20, 30); // {0: 10, 1: 20, 2: 30}
+
+function info() {
+  console.log(arguments[1]);
+}
+info(10, 20, 30); // 20
+
+// Sabira zadate parametre */
+function info() {
+  var res = 0;
+  for (var i = 0; i < arguments.length; i++) {
+    res = res + arguments[i];
+  }
+  console.log(res);
+}
+info(10, 20, 30); // 60
+info(12, 33, 44, 55, 999); // 1143
+// Zaboravi šta je znala
+
+function info() {
+  var res = 0;
+  for(var i = 0; i < arguments.length; i++){
+    res = res + arguments[i];
+  }
+  return 100;
+}
+// info(10,20,30); // 60
+// info(12,33,44,55,999); // 1143
+var x = info();
+console.log(x); // vrati 100 iz funkcije
+
+function info() {
+  var res = 0;
+  for(var i = 0; i < arguments.length; i++){
+    res = res + arguments[i];
+  }
+  return res;
+}
+var x = info(100,200,300);
+console.log(x); // 600
+
+function info() {
+  var res = 0;
+  for(var i = 0; i < arguments.length; i++){
+    res = res + arguments[i];
+  }
+  return res;
+}
+var x = info(100,200,300);
+console.log(x + info(22,33,44)); // 699
