@@ -2,16 +2,7 @@
 import './style.css';
 
 // Write Javascript code!
-
-var obj = { 
-  name: "Samsung",
-  model: "Note7" 
+var names = ['Ana', 'Marija', 'Ivana', 'Jovana', 'Sofija'];
+for (var i = 0; i < names.length; i++) {
+  console.log(names[i]);
 }
-  
-for(var prop in obj) {
-  console.log(obj[prop]);   // "Samsung", "Note7"	
-}
-  
-
-
-
