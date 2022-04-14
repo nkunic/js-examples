@@ -10,11 +10,26 @@ if (password === 123) {
 } else {
   console.log('Greška!');
 }
-var password = prompt("Pogodite broj");
-if (password === "123") {
+var password = prompt('Pogodite broj');
+if (password === '123') {
   console.log('Pogodak!');
 } else {
   console.log('Greška!');
+}
+
+var x;
+if (x === undefined) {
+  console.log('null'); // null
+} else {
+  console.log('undefined');
+}
+
+var a = 10;
+var b = 20;
+if (a !== b && b / a <= 2 ) {
+  console.log(true); // true
+}else {
+  console.log(false);
 }
 
 
@@ -36,14 +51,14 @@ function mult() {
   console.log(num1 * num2);
 }
 
-if (action === "+") {
+if (action === '+') {
   add();
-} else if (action === "-") {
+} else if (action === '-') {
   sub();
-} else if (action === "/") {
+} else if (action === '/') {
   div();
-} else if (action === "*") {
+} else if (action === '*') {
   mult();
 } else {
-  console.log("Pogrešan unos!");
+  console.log('Pogrešan unos!');
 }

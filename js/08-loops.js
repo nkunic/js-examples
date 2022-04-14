@@ -12,6 +12,12 @@ while (test < 10) {
   test++;
 }
 
+var x = 3;
+while (x < 7) {
+  x++;
+  console.log(x); // 4,5,6,7
+}
+
 /* Do while */
 //???
 var count = 0;
@@ -32,6 +38,11 @@ for (var count = 0; count < 18; count++) {
 var a = [1, 2, 3, 4, 5, 6, 7, 8];
 for (var i = 0; i < a.length; i++) {
   console.log(a[i]);
+}
+
+var arr = ['js','php','c++']
+for (var i = 0; i < 3; i++) {
+  console.log(arr[1]);  // php, php, php
 }
 
 var names = ['Ana', 'Marija', 'Ivana', 'Jovana'];

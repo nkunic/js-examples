@@ -51,3 +51,11 @@ function x(a,b){
   console.log(a+b)
 }
 x("3",1212);
+
+
+var x = 10;
+function pokusaj(){
+	x = 20;
+}
+pokusaj();
+console.log(x); // 20
