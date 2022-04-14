@@ -2,9 +2,16 @@
 import './style.css';
 
 // Write Javascript code!
-var count = 0;
-do {
-  console.log(count);
-  count++;
+
+var obj = { 
+  name: "Samsung",
+  model: "Note7" 
 }
-while (count == 20);
+  
+for(var prop in obj) {
+  console.log(obj[prop]);   // "Samsung", "Note7"	
+}
+  
+
+
+
