@@ -18,3 +18,10 @@ function myTimer() {
     alert('Zdravo, Svete!');
 }
 
+<p id="demo"></p>
+<button onclick="clearInterval(myVar)">Stop time</button>
+var myVar = setInterval(myTimer, 1000);
+function myTimer() {
+    var d = new Date();
+    document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+}
