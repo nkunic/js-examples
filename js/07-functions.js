@@ -3,7 +3,12 @@ function display() {
   var name = 'Js';
   console.log(name); // Js
 }
-display();
+display(); 
+
+function myFun() {
+  alert('Zdravo, Svete!'); // Zdravo, Svete!
+}
+myFun(); 
 
 function display() {
   console.log(name2); // name2 is not defined
