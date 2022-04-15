@@ -2,5 +2,3 @@
 import './style.css';
 
 // Write Javascript code!
-
-
