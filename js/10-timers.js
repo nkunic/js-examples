@@ -43,3 +43,17 @@ setInterval(function() {
   counter++;
   console.log("Prošlo je: " + counter + "s"); // Odbrojava svake sekunde Prošlo je: n s
 },1000)
+
+
+
+/* setTimeout() & setInterval() metode */
+
+var counter = 0;
+var loop = setInterval(function() {
+  counter++;
+  console.log("Prošlo je: " + counter + "s"); // Odbrojava svake sekunde Prošlo je: n s
+},1000)
+
+setTimeout(function() {
+  clearInterval(loop);
+},6000) // Prestaće posle 6 sekundi
