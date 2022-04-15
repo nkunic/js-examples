@@ -17,6 +17,9 @@ var num = 2.33;
 var num1 = Math.ceil(num);
 console.log(num1); // 3
 
+var t = Math.ceil(9.2);
+console.log(t); // 10
+
 console.log(Math.min(10, 20, 30, 40)); // 10
 console.log(Math.max(10, 20, 30, 40)); // 40
 

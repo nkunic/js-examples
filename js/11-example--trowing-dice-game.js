@@ -1,8 +1,8 @@
 /* Players*/
 // var player1 = 'Danilo';
 // var player2 = 'Ivan';
-var player1 = prompt("Player 1");
-var player2 = prompt("Player 2");
+var player1 = prompt('Player 1');
+var player2 = prompt('Player 2');
 
 /* Round */
 var round = 0;
@@ -12,8 +12,7 @@ var player1Score = 0;
 var player2Score = 0;
 
 function bacanjeKockice() {
-
-  /* Eliminacija skakanja konzole */ 
+  /* Eliminacija skakanja konzole */
   console.clear();
 
   /* Round count */
@@ -35,7 +34,17 @@ function bacanjeKockice() {
   console.log(player1 + ':' + kockica1 + ' --- ' + kockica2 + ':' + player2);
 
   /* Current score */
-  console.log(player1 + "(" +player1Score + ")" + " : " + "(" +player2Score + ")" + player2 );
+  console.log(
+    player1 +
+      '(' +
+      player1Score +
+      ')' +
+      ' : ' +
+      '(' +
+      player2Score +
+      ')' +
+      player2
+  );
 
   /* Game ends after 10 rounds */
   if (round === 10) {
@@ -48,11 +57,11 @@ function bacanjeKockice() {
 bacanjeKockice();
 
 function winner() {
-  if(player1Score > player2Score) {
-    console.log("Winner: " + player1 + "!");
+  if (player1Score > player2Score) {
+    console.log('Winner: ' + player1 + '!');
   } else if (player1Score < player2Score) {
-    console.log("Winner: " + player2 + "!");
+    console.log('Winner: ' + player2 + '!');
   } else {
-    console.log("Draw: no winner!");
+    console.log('Draw: no winner!');
   }
 }

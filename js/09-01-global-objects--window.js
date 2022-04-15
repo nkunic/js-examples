@@ -1,6 +1,12 @@
 /* Window objekat */
 console.log(window);
 
+function info() {
+  console.log(true);
+}
+window.info(); // Validno pozivanje funkcije info()
+
+
 var a = 10;
 console.log(a); // 10
 console.log(window.a); // 10
@@ -15,3 +21,4 @@ function animalCount() {
   console.log(animal);
 }
 animalCount(); // Dog
+

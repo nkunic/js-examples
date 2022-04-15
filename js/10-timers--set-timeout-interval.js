@@ -16,7 +16,7 @@ setTimeout(function() {
 },2000) // Odložili izvršenje funkcije za 2 sekunde
 
 
-
+setTimeout(bacanjeKockice, 3000);
 
 
 /* setInterval() metoda */
