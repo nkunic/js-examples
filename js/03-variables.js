@@ -1,61 +1,61 @@
 /***** VARIABLES *****/
 var broj = 12; // number
-console.log(broj);
+console.log(broj); // 12
 var text = 'Učim Javascript'; // string
-console.log(text);
+console.log(text); // Učim Javascript
 
 /*** SCOPE  ***/
 var ime = 'global';
 function proveriScope() {
   var ime = 'local';
-  console.log(ime);
+  console.log(ime);  // "local"
 }
-proveriScope(); // "local"
+proveriScope();
 console.log(ime); // "global"
 
 var ime = 'global';
 function proveriScope() {
   ime = 'local';
-  console.log(ime);
+  console.log(ime); // "local"
 }
-proveriScope(); // "local"
+proveriScope(); 
 console.log(ime); // "local"
 
-var car = 'Volvo'; // global
-console.log(car);
+var car = 'Volvo'; 
+console.log(car); // Volvo - global
 function info() {
   console.log(car);
 }
 info();
 
 function info() {
-  var cat = 'Školjkica'; // local
-  console.log(cat);
+  var cat = 'Školjkica';
+  console.log(cat);  // Školjkica - local
 }
 info();
 
-var cat = 'Žaklina'; // global
+var cat = 'Žaklina';
 function info() {
-  var cat = 'Školjkica'; // local
+  var cat = 'Školjkica'; 
 }
 info();
-console.log(cat);
+console.log(cat); // Žaklina - global
 
-var cat = 'Žaklina'; // global
+var cat = 'Žaklina';
 function info() {
-  var cat = 'Školjkica'; // local
-  console.log(cat);
+  var cat = 'Školjkica'; 
+  console.log(cat); // Školjkica - local
 }
 info();
-console.log(cat);
+console.log(cat);  // Žaklina - global
 
-var cat = 'Žaklina'; // global
+var cat = 'Žaklina';
 function info() {
-  cat = 'Školjkica'; // global
-  console.log(cat);
+  cat = 'Školjkica';
+  console.log(cat); // Školjkica - global
 }
 info();
-console.log(cat);
+console.log(cat); // Školjkica - global
 
 function info() {
   console.log(animal); // undefined
