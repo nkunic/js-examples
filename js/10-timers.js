@@ -11,6 +11,14 @@ function myFunction() {
   alert('Zdravo, Svete!');
 }
 
+setTimeout(function() {
+  console.log("Radi!");
+},2000) // Odložili izvršenje funkcije za 2 sekunde
+
+
+
+
+
 /* setInterval() metoda */
 
 var myVar = setInterval(myTimer, 1000);
@@ -25,3 +33,7 @@ function myTimer() {
     var d = new Date();
     document.getElementById("demo").innerHTML = d.toLocaleTimeString();
 }
+
+setInterval(function() {
+  console.log("Radi!");
+},1000) // Svake 2 sekunde da se ponavlja funkcija
