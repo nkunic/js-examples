@@ -19,7 +19,7 @@ function bacanjeKockice() {
 
   console.log(player1 + ":" + kockica1 + " --- " + kockica2 + ":" + player2);
 
-  setTimeout(bacanjeKockice,2000);
+  setTimeout(bacanjeKockice,5000);
   
 }
 
