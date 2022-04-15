@@ -37,3 +37,9 @@ function myTimer() {
 setInterval(function() {
   console.log("Radi!");
 },1000) // Svake 2 sekunde da se ponavlja funkcija
+
+var counter = 0;
+setInterval(function() {
+  counter++;
+  console.log("Prošlo je: " + counter + "s"); // Odbrojava svake sekunde Prošlo je: n s
+},1000)

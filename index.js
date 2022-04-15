@@ -9,3 +9,5 @@ setInterval(function() {
   console.log("Prošlo je: " + counter + "s");
 },1000)
 
+clearInterval();
+
