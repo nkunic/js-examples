@@ -1,33 +1,33 @@
 /***** FUNCTION *****/
 function display() {
   var name = 'Js';
-  console.log(name);
+  console.log(name); // Js
 }
 display();
 
 function display() {
-  console.log(name2);
+  console.log(name2); // name2 is not defined
 }
-display(); // name2 is not defined
+display(); 
+
+function display(a) {
+  console.log(a); // undefined
+}
+display(); 
 
 function display(a) {
   console.log(a);
 }
-display(); // undefined
-
-function display(a) {
-  console.log(a);
-}
-display('Javascript');
-display('Php');
+display('Javascript'); // Javascript
+display('Php'); // Php
 
 function info() {
-  console.log('Zdravo, Svete');
+  console.log('Zdravo, Svete'); // Zdravo, Svete
 }
 info();
 
 function zbir(broj1, broj2) {
-  console.log(broj1 + broj2);
+  console.log(broj1 + broj2); // 121
 }
 zbir(31, 90);
 
@@ -43,12 +43,12 @@ function pozdrav(ime) {
   var ceoPozdrav = 'Zdravo' + ' ' + ime + '!';
   return ceoPozdrav;
 }
-console.log(pozdrav('Juliska'));
+console.log(pozdrav('Juliska')); // Zdravo Juliska!
 var pozdravImenom = pozdrav('Juliska');
-console.log(pozdravImenom);
+console.log(pozdravImenom); // Zdravo Juliska!
 
 function x(a, b) {
-  console.log(a + b);
+  console.log(a + b); // 31212
 }
 x('3', 1212);
 
@@ -60,18 +60,18 @@ pokusaj();
 console.log(x); // 20
 
 /* Function statement */
-info1();
+info1(); // Zdravo
 function info1() {
   console.log('Zdravo');
 }
-info1();
+info1(); Zdravo
 
 /* Function expression (nema ime, anonimna funkcija, njeno ime je ime varijable) */
 info2(); // info2 is not a function
 var info2 = function () {
   console.log('Zdravo opet');
 };
-info2();
+info2(); // Zdravo opet
 
 /* Metode */
 var car = {
