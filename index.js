@@ -3,13 +3,23 @@ import './style.css';
 
 // Write Javascript code!
 
-var player1 = 'Danilo';
-var player2 = 'Ivan';
+/* Players*/
+// var player1 = 'Danilo';
+// var player2 = 'Ivan';
+//var player1 = prompt("Player 1");
+//var player2 = prompt("Player 2");
+
+/* Round */
 var round = 0;
+
+/* Player score */
 var player1Score = 0;
 var player2Score = 0;
 
 function bacanjeKockice() {
+
+  /* Eliminacija skakanja konzole */ 
+  console.clear();
 
   /* Round count */
   round++;
@@ -36,8 +46,18 @@ function bacanjeKockice() {
   if (round === 10) {
     winner();
   } else {
-    setTimeout(bacanjeKockice, 5000);
+    setTimeout(bacanjeKockice, 3000);
   }
 }
 
 bacanjeKockice();
+
+function winner() {
+  if(player1Score > player2Score) {
+    console.log("Winner: " + player1 + "!");
+  } else if (player1Score < player2Score) {
+    console.log("Winner: " + player2 + "!");
+  } else {
+    console.log("Draw: no winner!");
+  }
+}
