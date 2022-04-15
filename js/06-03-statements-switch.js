@@ -1,7 +1,7 @@
-var num1 = parseInt(prompt('Unesite broj 1'));
-var num2 = parseInt(prompt('Unesite broj 2'));
+/***** SWITCH *****/
+var num1 = parseInt(prompt('Unesite broj 1')); // 6
+var num2 = parseInt(prompt('Unesite broj 2')); // 3
 var action = prompt('Unesite željenu radnju \n + - / *');
-
 function add() {
   console.log(num1 + num2);
 }
@@ -14,20 +14,18 @@ function div() {
 function mult() {
   console.log(num1 * num2);
 }
-
-/***** SWITCH *****/
 switch (action) {
   case '+':
-    add();
+    add(); // 9
     break;
   case '-':
-    sub();
+    sub(); // 3
     break;
   case '/':
-    div();
+    div(); // 2
     break;
   case '*':
-    mult();
+    mult(); // 18
     break;
   default:
     console.log('Pogrešan unos!');
