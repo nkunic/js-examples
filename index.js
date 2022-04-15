@@ -123,7 +123,7 @@ function askUserForHoroscopeSign() {
           ' je super znak. Opis: ' +
           piscesDescription
       ); 
-  } 
+  };
 
 }
 
