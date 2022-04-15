@@ -30,7 +30,7 @@ function bacanjeKockice() {
   console.log(player1 + ':' + kockica1 + ' --- ' + kockica2 + ':' + player2);
 
   /* Current score */
-  console.log(player1 + "(" +player1Score + ")" + player2 + "(" +player2Score + ")" );
+  console.log(player1 + "(" +player1Score + ")" + " : " + "(" +player2Score + ")" + player2 );
 
   /* Game ends after 10 rounds */
   if (round === 10) {
