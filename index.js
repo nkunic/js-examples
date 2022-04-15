@@ -6,6 +6,9 @@ import './style.css';
 var player1 = 'Danilo';
 var player2 = 'Ivan';
 var round = 0;
+var player1Score;
+var player2Score;
+
 function bacanjeKockice() {
   round++;
   // var k1 = Math.floor(Math.random() * 6);
@@ -17,16 +20,13 @@ function bacanjeKockice() {
 
   console.log('*** ROUND ' + round + ' ***');
 
-  console.log(player1 + ":" + kockica1 + " --- " + kockica2 + ":" + player2);
+  console.log(player1 + ':' + kockica1 + ' --- ' + kockica2 + ':' + player2);
 
-  if(round === 10) {
+  if (round === 10) {
     winner();
   } else {
-    setTimeout(bacanjeKockice,5000);
+    setTimeout(bacanjeKockice, 5000);
   }
-
-
-  
 }
 
 bacanjeKockice();
