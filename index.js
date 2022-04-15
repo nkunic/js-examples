@@ -6,8 +6,8 @@ import './style.css';
 /* Players*/
 // var player1 = 'Danilo';
 // var player2 = 'Ivan';
-//var player1 = prompt("Player 1");
-//var player2 = prompt("Player 2");
+var player1 = prompt("Player 1");
+var player2 = prompt("Player 2");
 
 /* Round */
 var round = 0;
