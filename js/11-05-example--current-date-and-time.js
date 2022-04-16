@@ -3,7 +3,7 @@ U ovakvom formatu:
 Danas je: Četvrtak.
 Trenutno vreme : 9 AM  : 22 : 24 */
 
-/* Days of week */
+/* Date today */
 var today = new Date();
 console.log(today); // Today date: 2022-04-16T13:12:38.178Z
 
