@@ -9,7 +9,7 @@ console.log(today); // Today date: 2022-04-16T13:12:38.178Z
 
 var day = today.getDay();
 // var day = new Date().getDay();
-console.log(day); // 6 
+console.log(day); // 6
 
 var daylist = [
   'Nedelja',
@@ -65,5 +65,13 @@ if (hour === 0 && prepand === ' AM ') {
 }
 
 console.log(
-  '*** Trenutno vreme: ' + hour + prepand + ' : ' + minute + 'min' + ' : ' + second + 'sec ***'
+  '*** Trenutno vreme: ' +
+    hour +
+    prepand +
+    ' : ' +
+    minute +
+    'min' +
+    ' : ' +
+    second +
+    'sec ***'
 ); // *** Trenutno vreme: 3 PM : 48min : 47sec ***
