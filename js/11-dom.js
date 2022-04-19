@@ -40,7 +40,31 @@ console.log(allLi);
 var oneLi = document.querySelectorAll('li'); // Ist element
 console.log(oneLi);
 
-var li = document.querySelectorAll('ul > li'); 
+var li = document.querySelectorAll('ul > li');
 console.log(li);
 
 /* ATRIBUTES */
+
+/* Change style */
+document.getElementById('p2').style.color = 'blue';
+
+/* Approaches the style property */
+var x = document.getElementById('myH1').style;
+console.log(x);
+
+/* List of atributes */
+var x = document.getElementsByTagName('h1')[0];
+console.log(x.attributes);
+
+/* setAttribute() */
+document.getElementsByTagName('input')[0].setAttribute('type', 'button');
+document.getElementById('aTag').setAttribute('href', 'http://www.krojacevaskola.rs');
+
+/* getAttribute() */
+var x = document.getElementsByTagName("h1")[0].getAttribute("class");
+var x = document.getElementById("aTag").getAttribute("target");
+var x = document.getElementById("myBtn").getAttribute("onclick");
+console.log(x);
+
+/* removeAttribute() */
+var x = document.getElementsByTagName("H1")[0].removeAttribute("class");
