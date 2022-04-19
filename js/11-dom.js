@@ -70,8 +70,18 @@ allList[0].id = 'one';
 allList[0].className = 'two';
 allList[0].className = 'active';
 
+for(var i = 0; i < 5; i++) {
+  allList[i].className = 'active';
+}
+for(var i = 0; i < 5; i++) {
+  if(i != 3) {
+    allList[i].className = 'active';
+  }
+}
+
 /* getAttribute() */
 var x = document.getElementsByTagName('h1')[0].getAttribute('class');
+var allList = document.getElementsByTagName('li');
 var x = document.getElementById('aTag').getAttribute('target');
 var x = document.getElementById('myBtn').getAttribute('onclick');
 console.log(x);

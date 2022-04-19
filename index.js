@@ -5,7 +5,8 @@ import './style.css';
 
 var allList = document.getElementsByTagName('li');
 
+var counter = 0;
+var loop = setInterval( function() {
+  allList[counter].style.background = "tomato";
+},1000);
 
-// for(var i = 0; i < 5; i++) {
-//   allList[i].className = 'active';
-// }
