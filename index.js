@@ -6,11 +6,13 @@ import './style.css';
 var allList = document.getElementsByTagName('li');
 
 var counter = 0;
-var loop = setInterval( function() {
-  allList[counter].style.background = "tomato";
+var loop = setInterval(function () {
+  for (var i = 0; i < 5; i++) {
+    allList[i].style.background = 'none';
+  }
+  allList[counter].style.background = 'tomato';
   counter++;
-  if(counter == 5) {
+  if (counter == 5) {
     counter = 0;
   }
-},1000);
-
+}, 1000);
