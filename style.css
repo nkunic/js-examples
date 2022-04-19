@@ -1,3 +1,22 @@
-h1, h2 {
-  font-family: Lato;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  width: 100px;
+  margin: 50px auto;
+  box-shadow: 0 0 8px;
+  list-style: none;
+}
+
+li {
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.active {
+  background-color: tomato;
 }

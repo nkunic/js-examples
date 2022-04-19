@@ -48,6 +48,10 @@ console.log(li);
 /* Change style */
 document.getElementById('p2').style.color = 'blue';
 
+var allList = document.getElementsByTagName('li');
+console.log(allList);
+allList[0].style.background = 'tomato';
+
 /* Approaches the style property */
 var x = document.getElementById('myH1').style;
 console.log(x);
@@ -58,13 +62,19 @@ console.log(x.attributes);
 
 /* setAttribute() */
 document.getElementsByTagName('input')[0].setAttribute('type', 'button');
-document.getElementById('aTag').setAttribute('href', 'http://www.krojacevaskola.rs');
+document
+  .getElementById('aTag')
+  .setAttribute('href', 'http://www.krojacevaskola.rs');
+
+allList[0].id = 'one';
+allList[0].className = 'two';
+allList[0].className = 'active';
 
 /* getAttribute() */
-var x = document.getElementsByTagName("h1")[0].getAttribute("class");
-var x = document.getElementById("aTag").getAttribute("target");
-var x = document.getElementById("myBtn").getAttribute("onclick");
+var x = document.getElementsByTagName('h1')[0].getAttribute('class');
+var x = document.getElementById('aTag').getAttribute('target');
+var x = document.getElementById('myBtn').getAttribute('onclick');
 console.log(x);
 
 /* removeAttribute() */
-var x = document.getElementsByTagName("H1")[0].removeAttribute("class");
+var x = document.getElementsByTagName('H1')[0].removeAttribute('class');
