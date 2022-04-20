@@ -1,6 +1,7 @@
 /* EVENTS */
 
 <h1 onclick="alert('Naslov je kliknut');">Naslov</h1>;
+<button id="clickMe" onclick="alert(12)">Click me</button>
 
 window.onload = function () {
   alert('Stranica je ucitana');
