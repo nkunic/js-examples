@@ -3,12 +3,13 @@ import './style.css';
 
 // Write Javascript code! //
 
-var allLi = document.querySelectorAll('li');
+var btn = document.getElementsByTagName('button')[0];
 
-for (var i = i; i < allLi.length; i++) {
-  allLi[i].addEventListener('click', colorMe);
-}
+btn.addEventListener('click', function(e) {
+  console.log(e); // Objekat: Mouse PointerEvent
+});
 
-function colorMe() {
-	this.style.background = "tomato";
-}
+window.addEventListener('mousemove', function(e) {
+  console.clear();
+  console.log("x:" + e.x + "   y: " + e.y);
+});
