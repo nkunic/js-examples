@@ -3,13 +3,12 @@ import './style.css';
 
 // Write Javascript code! //
 
-var btn = document.getElementsByTagName('button')[0];
+var allLi = document.querySelectorAll('li');
 
+for (var i = i; i < allLi.length; i++) {
+  allLi[i].addEventListener('click', colorMe);
+}
 
-document.btn.addEventListener("click", function(event){
-    	alert('Kliknuli ste na naslov');
-});
-
-// document.getElementById("a1").addEventListener("click", function(event){
-//   event.preventDefault()
-// });
+function colorMe() {
+	this.style.background = "tomato";
+}

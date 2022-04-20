@@ -80,6 +80,23 @@ function display() {
 btn.addEventListener('click', info); // Javascript
 btn.addEventListener('click', display); // Display obadva
 
+var btn = document.getElementsByTagName('button')[0];
+btn.addEventListener("click", function(event){
+  alert('Kliknuli ste na naslov');
+});
+
+var firstLi = document.querySelector('li');
+var allLi = document.querySelectorAll('li');
+function colorMe() {
+	if(firstLi.style.background == "tomato") {
+		firstLi.style.background = "white";
+	} else {
+		firstLi.style.background = "tomato";
+	}
+}
+firstLi.addEventListener('click', colorMe);
+/allLi.addEventListener('click', colorMe); // allLi.addEventListener is not a function
+
 /*------------- THIS ---------------*/
 
 function info(){
@@ -94,7 +111,11 @@ var obj = {
 }
 obj.info();
 
-/* PREVENT DEFAULT */
+
+
+/*------------- PREVENT DEFAULT ---------------*/
+
+<a id="a1" href="https://www.krojacevaskola.com/">Link</a>
 document.getElementById("a1").addEventListener("click", function(event){
   event.preventDefault()
 });
