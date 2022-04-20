@@ -17,3 +17,17 @@ naslov.addEventListener('click', pozoviAlert);
 function pozoviAlert() {
   alert('Kliknuli ste na naslov');
 }
+
+
+/* THIS */
+function info(){
+	console.log(this); // window  
+}
+info();
+
+var obj = {
+	info : function(){
+		console.log(this); // obj
+	}
+}
+obj.info();

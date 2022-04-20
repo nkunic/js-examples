@@ -19,3 +19,10 @@ var knjiga = {
   },
 };
 console.log(knjiga.pisac.ime); // Danilo
+
+var obj = {
+  info: function () {
+    console.log(this); // obj
+  },
+};
+obj.info();
