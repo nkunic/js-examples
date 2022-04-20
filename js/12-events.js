@@ -6,6 +6,11 @@ window.onload = function () {
   alert('Stranica je ucitana');
 };
 
+var element = document.getElementById('print');
+element.onclick = function(){
+  alert('Stranica je ucitana');
+}
+
 var print = document.getElementById('print');
 console.log(print);
 print.addEventListener('click', function stampaj() {
@@ -18,6 +23,10 @@ function pozoviAlert() {
   alert('Kliknuli ste na naslov');
 }
 
+// element.addEventListener( 'onclick' , info )
+// element.addEventListener( 'click' , info() )
+// element.addEventListener( 'onClick' , info )
+element.addEventListener( 'click' , info )
 
 /* THIS */
 function info(){
@@ -31,3 +40,5 @@ var obj = {
 	}
 }
 obj.info();
+
+/* PREVENT DEFAULT */
