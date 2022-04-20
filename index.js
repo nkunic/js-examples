@@ -3,4 +3,14 @@ import './style.css';
 
 // Write Javascript code! //
 
-<h1 onclick="alert('Naslov je kliknut');">Naslov</h1>
+var print = getElementById("print");
+document.print.addEventListener('click',function stampaj(){
+  window.print();
+}); 
+
+var naslov = document.getElementById('naslov');
+naslov.addEventListener('click',pozoviAlert);
+function pozoviAlert(){
+	alert('Kliknuli ste na naslov');
+}
+
