@@ -123,27 +123,39 @@ var x = document.getElementsByTagName('H1')[0].removeAttribute('class');
 const appDiv = document.getElementById('app');
 appDiv.innerHTML = `<h1>JS Starter</h1>`;
 
-var element = document.getElementById("header");
-element.innerHTML = "Novi naslov";
+var element = document.getElementById('header');
+element.innerHTML = 'Novi naslov';
 
-var element = document.getElementById("header");
+var element = document.getElementById('header');
 element.innerHTML = '<script>alert("Sigurnosni problem")</script>';
 
+var wrapp = document.querySelector('.wrapp');
+wrapp.innerHTML = 'Zdravo!';
+wrapp.innerHTML = '<h1>Zdravo!</h1>';
+wrapp.innerHTML += '<p>Zdravo opet!</p>'; // Add content
+
 /* Get content */
-var element = document.getElementById("header");
+var element = document.getElementById('header');
 var text = element.innerHTML;
-alert(text) // Stari naslov
+alert(text); // Stari naslov
+
+var wrapp = document.querySelector('.wrapp');
+wrapp.innerHTML = '<h1>Zdravo!</h1>';
+console.log(wrapp.innerHTML);
 
 /* innerText */
 
 /* Set content */
-var element = document.getElementById("header");
-element.innerText = "Novi naslov";
+var element = document.getElementById('header');
+element.innerText = 'Novi naslov';
+
+var wrapp = document.querySelector('.wrapp');
+wrapp.innerText = '<h1>Inner text</h1>';
 
 /* Get content */
 function getInnerText() {
-  var element = document.getElementById("header");
+  var element = document.getElementById('header');
   console.log(element);
-   alert(element.innerText);
+  alert(element.innerText);
 }
 getInnerText();
