@@ -70,11 +70,11 @@ allList[0].id = 'one';
 allList[0].className = 'two';
 allList[0].className = 'active';
 
-for(var i = 0; i < 5; i++) {
+for (var i = 0; i < 5; i++) {
   allList[i].className = 'active';
 }
-for(var i = 0; i < 5; i++) {
-  if(i != 3) {
+for (var i = 0; i < 5; i++) {
+  if (i != 3) {
     allList[i].className = 'active';
   }
 }
@@ -94,6 +94,16 @@ var loop = setInterval(function () {
 var ul = document.getElementsByTagName('ul')[0];
 ul.setAttribute('title', 'Ovo je naša lista');
 
+var element = document.getElementsByTagName('h2')[0];
+//console.log(element);
+//element.id.subtitle;
+//element.id("subtitle");
+element.id = 'subtitle';
+//element.setId("naslov");
+let element = document.getElementsByTagName('h2')[0];
+console.log(element);
+element.id = 'newid';
+
 /* getAttribute() */
 var x = document.getElementsByTagName('h1')[0].getAttribute('class');
 var allList = document.getElementsByTagName('li');
@@ -105,3 +115,35 @@ console.log(ul.getAttribute('title'));
 
 /* removeAttribute() */
 var x = document.getElementsByTagName('H1')[0].removeAttribute('class');
+
+/* CONTENT */
+
+/* innerHTML */
+/* Set content */
+const appDiv = document.getElementById('app');
+appDiv.innerHTML = `<h1>JS Starter</h1>`;
+
+var element = document.getElementById("header");
+element.innerHTML = "Novi naslov";
+
+var element = document.getElementById("header");
+element.innerHTML = '<script>alert("Sigurnosni problem")</script>';
+
+/* Get content */
+var element = document.getElementById("header");
+var text = element.innerHTML;
+alert(text) // Stari naslov
+
+/* innerText */
+
+/* Set content */
+var element = document.getElementById("header");
+element.innerText = "Novi naslov";
+
+/* Get content */
+function getInnerText() {
+  var element = document.getElementById("header");
+  console.log(element);
+   alert(element.innerText);
+}
+getInnerText();
