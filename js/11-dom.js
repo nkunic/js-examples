@@ -159,3 +159,15 @@ function getInnerText() {
   alert(element.innerText);
 }
 getInnerText();
+
+/* CREATE ELEMENT */
+
+var paragraph = document.createElement('p'); // Kreira <p> element
+var text = document.createTextNode('Ovo je paragraf'); // Kreira tekstualni node
+paragraph.appendChild(text); // Pridodaje tekst <p> elementu
+document.body.appendChild(paragraph); // Pridodaje <p> <body> elementu <p>Ovo je paragraf</p>
+
+var box = document.querySelector('.box');
+var newDiv = document.createElement('div');
+newDiv.className = 'box__child';
+box.appendChild(newDiv);

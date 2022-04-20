@@ -36,8 +36,17 @@ li {
 }
 
 .box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 10rem;
   height: 10rem;
   border: 1px solid black;
   cursor: pointer;
+}
+
+.box__child {
+  width: 5rem;
+  height: 5rem;
+  background-color: green;
 }
