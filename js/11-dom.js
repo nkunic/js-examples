@@ -171,3 +171,6 @@ var box = document.querySelector('.box');
 var newDiv = document.createElement('div');
 newDiv.className = 'box__child';
 box.appendChild(newDiv);
+
+var text = '<div class="box__child"></div>';
+box.innerHTML = text;

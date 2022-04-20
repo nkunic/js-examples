@@ -3,7 +3,14 @@ import './style.css';
 
 // Write Javascript code! //
 
-var box = document.querySelector('.box');
+var xo = document.querySelector('.xo');
 
-var text = '<div class="box_child"></div>';
-box.innerHTML = text;
+function createTable() {
+  var text = '';
+  for (var i = 0; i < 9; i++) {
+    text += '<div class="xo__item"></div>';
+  }
+  xo.innerHTML = text;
+}
+
+createTable();
